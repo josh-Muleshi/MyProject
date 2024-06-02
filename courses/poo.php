@@ -1,16 +1,17 @@
 <?php
 
-class Person {
-    public int $id;
+class Animal {
+    public function __construct(
+        public string $name,
+        public string $description,
+    ) {}
 }
 
-$a = new Person();
-$b = $a;
-$a->id = 20;
+final class Dog extends Animal {
+}
 
-echo spl_object_id($a);
-echo "\n";
-echo spl_object_id($b);
-echo "\n";
-echo $b->id;
-echo "\n";
+final class Cat extends Animal {
+    const string NAME = "josh";
+}
+
+echo Cat::NAME;
