@@ -33,6 +33,7 @@ if ($error == null) {
     <title>Calculator</title>
 </head>
 <body>
+    <p><a href="../index.php">Retour</a></p>
     <h1>Calculatrice</h1>
     <form action="" method="post">
         <input type="number" name="number1" value="<?= $number1?>" step="any">

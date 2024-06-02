@@ -41,6 +41,7 @@ if ($error == null) {
     <title>Salary</title>
 </head>
 <body>
+    <p><a href="../index.php">Retour</a></p>
     <h1>Salaire</h1>
     <form action="" method="post">
         <input type="number" name="hourly_wage" value="<?= $hourly_wage?>" placeholder="Salaire par heure"><br><br>

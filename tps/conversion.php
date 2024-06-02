@@ -34,6 +34,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p><a href="../index.php">Retour</a></p>
     <h1>Calculatrice</h1>
     <form action="" method="post">
         <input type="number" name="amount" value="<?= $amount?>" step="any" placeholder="Amount">
