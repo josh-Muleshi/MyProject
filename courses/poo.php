@@ -11,7 +11,7 @@ final class Dog extends Animal {
 }
 
 final class Cat extends Animal {
-    const string NAME = "josh";
+    const NAME = "josh";
 }
 
 echo Cat::NAME;
