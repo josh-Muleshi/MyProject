@@ -1,6 +1,8 @@
 <?php
 
 require_once "Footballteam.php";
+require_once "ClubTeam.php";
+require_once "NationalTeam.php";
 
 $firstClub = new ClubTeam("Mazembe", "Mputu", "1956", "TP Mazembe");
 echo $firstClub->getName() . "\n";

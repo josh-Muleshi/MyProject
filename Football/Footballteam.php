@@ -37,40 +37,4 @@ abstract class FootballTeam {
 }
 
 
-class ClubTeam extends FootballTeam {
 
-    public function __construct(string $name, string $coach, string $createdAt, private string $stadium) {
-        parent::__construct($name, $coach, $createdAt);
-    }
-
-    public function playMatch() {
-        echo $this->getName() . " is playing a club match at " . $this->stadium . ".\n";
-    }
-
-    public function getStadium() {
-        return $this->stadium;
-    }
-
-    public function setStadium($stadium) {
-        $this->stadium = $stadium;
-    }
-}
-
-class NationalTeam extends FootballTeam {
-
-    public function __construct(string $name, string $coach, string $createdAt, private string $country) {
-        parent::__construct($name, $coach, $createdAt);
-    }
-
-    public function playMatch() {
-        echo $this->getName() . " is playing an international match for " . $this->country . ".\n";
-    }
-
-    public function getCountry() {
-        return $this->country;
-    }
-
-    public function setCountry($country) {
-        $this->country = $country;
-    }
-}
