@@ -1,6 +1,7 @@
 <?php
 
-abstract class FootballTeam {
+abstract class FootballTeam 
+{
 
     public function __construct(
         private string $name,
@@ -9,29 +10,35 @@ abstract class FootballTeam {
     ) {
     }
 
-    abstract public function playMatch();
+    abstract public function playMatch(): void;
 
-    public function getName(): string {
+    public function getName(): string 
+    {
         return $this->name;
     }
 
-    public function setName($name): void {
+    public function setName($name): void 
+    {
         $this->name = $name;
     }
 
-    public function getCoach(): string {
+    public function getCoach(): string 
+    {
         return $this->coach;
     }
 
-    public function setCoach($coach): void {
+    public function setCoach($coach): void 
+    {
         $this->coach = $coach;
     }
 
-    public function getCreatedAt(): string {
+    public function getCreatedAt(): string 
+    {
         return $this->createdAt;
     }
 
-    public function setEstablishedYear($createdAt): void {
+    public function setcreatedAt($createdAt): void 
+    {
         $this->createdAt = $createdAt;
     }
 }

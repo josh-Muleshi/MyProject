@@ -9,5 +9,6 @@ echo $firstClub->getName() . "\n";
 echo $firstClub->getStadium() . "\n";
 
 $firstCountry = new NationalTeam("Leopard", "Ibenge","1965","RDC");
+$firstCountry->setCreatedAt("1960");
 echo $firstCountry->getName() . "\n";
 echo $firstCountry->getCountry() . "\n";
