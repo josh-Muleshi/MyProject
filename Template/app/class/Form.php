@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Classes;
+
 class Form{
     public string $tag = 'p';
 
