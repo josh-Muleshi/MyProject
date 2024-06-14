@@ -8,7 +8,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 ob_start();
 if ($page === 'home') {
-    require '../pages/home.php';
+    require_once '../pages/home.php';
 }elseif ($page === 'show') {
     require '../pages/show.php';
 }
